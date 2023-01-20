@@ -1,18 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        int eaters = 5; // сколько людей будут есть
+        int amount = 10000; // стоимость билета
 
-        int water = 3000; // миллилитров воды
-        int potatoes = 5; // картофелин
-        int chicken = 6; // куриных бёдер
-        int spices = 10; // ложек специй
+        int mile = 20; // стоимость бонусной мили
+        int bonus = amount/mile; // расчет бонусов
 
-        System.out.println("Сварили суп. На одного человека вышло:");
-        System.out.println((water / eaters) + " миллилитров воды");
-        System.out.println((potatoes / eaters) + " картофелин(а)");
-        System.out.println((chicken / eaters) + " куриных(ое) бёдер(ро)");
-        System.out.println((spices / eaters) + " ложек(ка) специй");
+        System.out.println("Количество бонусных миль:" + bonus);
 
+    }
+}
+
+class Main2 {
+    public static void main(String[] args) {
+        int balans = 100;
+        int amount = 999;
+        int calculation = amount / balans * 1;
+        int bonus;
+        if (amount > 999) {
+            bonus = calculation + amount + balans;
+        } else {
+            bonus = balans + amount;
+        }
+        System.out.println("Баланс телефона:" + bonus);
     }
 }
